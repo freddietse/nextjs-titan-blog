@@ -1,16 +1,135 @@
-html,
+@tailwind base;
+
+/* Write your own custom base styles here */
+
+/* Start purging... */
+@tailwind components;
+/* Stop purging. */
+
+/* Write you own custom component styles here */
+.btn-blue {
+  @apply bg-blue-500 text-white font-bold py-2 px-4 rounded;
+}
+
+/* Start purging... */
+@tailwind utilities;
+/* Stop purging. */
+
+/* Your own custom utilities */
+@import "https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&display=swap";
+
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  @apply subpixel-antialiased;
+  @apply tracking-wide;
+  @apply leading-loose;
+  @apply text-lg;
+  font-family: "Noto Serif SC", serif;
 }
 
-a {
-  color: inherit;
-  text-decoration: none;
+.entry-content h1 {
+  @apply text-4xl;
+  @apply mb-10;
+  @apply mt-12;
+  @apply font-bold;
 }
 
-* {
-  box-sizing: border-box;
+.entry-content h2 {
+  @apply text-3xl;
+  @apply mb-8;
+  @apply mt-10;
+  @apply font-bold;
+}
+
+.entry-content h3 {
+  @apply text-2xl;
+  @apply mb-6;
+  @apply mt-8;
+  @apply font-bold;
+}
+
+.entry-content h4 {
+  @apply text-xl;
+  @apply mb-4;
+  @apply mt-6;
+  @apply font-bold;
+}
+
+.entry-content p {
+  @apply mb-5;
+  @apply mt-5;
+  @apply break-all;
+}
+
+.entry-content ul,
+.entry-content ol {
+  @apply list-inside;
+  @apply mb-5;
+  @apply mt-5;
+}
+
+.entry-content li {
+  @apply list-disc;
+  @apply mb-3;
+  @apply mt-3;
+  @apply break-all;
+}
+
+.entry-content table {
+  @apply w-full;
+  @apply table-auto;
+  @apply text-left;
+  @apply mb-5;
+  @apply mt-5;
+}
+
+.entry-content table td,
+.entry-content table th {
+  @apply p-3;
+  @apply border;
+}
+
+.entry-content a {
+  @apply underline;
+}
+
+.entry-content a:hover {
+  @apply text-black;
+}
+
+.entry-content blockquote {
+  @apply border-l-4;
+  @apply italic;
+  @apply bg-gray-100;
+  @apply p-4;
+  @apply mb-5;
+  @apply mt-5;
+}
+
+.entry-content blockquote p {
+  @apply m-0;
+}
+
+.entry-content figcaption {
+  @apply text-sm;
+  @apply text-gray-500;
+  @apply mt-3;
+  @apply text-center;
+}
+
+.big {
+  background-image: linear-gradient(120deg, #f4cf58, #f4cf58);
+  background-repeat: no-repeat;
+  background-size: 100% 0.4em;
+  background-position: 0 88%;
+  font-weight: inherit;
+  display: inline-block;
+  @apply leading-normal;
+}
+
+.entry-title {
+  @apply text-4xl;
+  @apply text-gray-900;
+  @apply font-bold;
+  @apply duration-700;
+  @apply leading-normal;
 }
