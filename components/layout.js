@@ -1,5 +1,7 @@
 import Link from "next/link";
 import Navbar from "./navbar";
+import SocialMedia from "./socialMedia";
+import Footer from "./footer";
 
 export default function Layout({ children }) {
   return (
@@ -12,7 +14,6 @@ export default function Layout({ children }) {
       md:grid-rows-12
       lg:grid-rows-1
       xl:grid-rows-1
-      h-screen
       container
       mx-auto
       "
@@ -39,7 +40,7 @@ export default function Layout({ children }) {
         xl:p-16
         "
       >
-        <div className="flex flex-col">
+        <div className="flex flex-col mb-6">
           <img
             src="/profile.jpg"
             alt=""
@@ -51,11 +52,12 @@ export default function Layout({ children }) {
             </Link>
           </h1>
         </div>
-
+        <SocialMedia />
         <Navbar />
       </div>
-      <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-9 xl:col-span-9 row-span-8 sm:row-span-8">
-        <div className="p-4 sm:p-4 md:p-8 lg:p-16 xl:p-16">{children}</div>
+      <div className="col-span-12 sm:col-span-12 md:col-span-12 lg:col-span-9 xl:col-span-9 row-span-8 sm:row-span-8 p-4 sm:p-4 md:p-8 lg:p-16 xl:p-16 flex flex-col min-h-screen">
+        <div className="flex-1">{children}</div>
+        <Footer />
       </div>
     </div>
   );

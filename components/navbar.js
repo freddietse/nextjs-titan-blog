@@ -1,34 +1,37 @@
-import Link from "next/link"
+import Link from "next/link";
 
 export default function Navbar() {
   const items = [
     {
       id: 0,
-      name: "photograph",
-      url: "/photograph",
+      name: "首页",
+      url: "/",
     },
     {
       id: 1,
-      name: "resources",
-      url: "/resources",
+      name: "照片",
+      url: "/photograph",
     },
     {
       id: 2,
-      name: "about",
+      name: "资源",
+      url: "/resources",
+    },
+    {
+      id: 3,
+      name: "关于",
       url: "/about",
     },
   ];
   return (
-      <nav className="flex flex-col py-10">
-        {items.map(item => (
-            <Link
-                href={item.url}
-                key={item.id}
-            >
-              <a className="py-3 font-bold duration-700 hover:text-yellow-500">{item.name.toUpperCase()}</a>
-
-            </Link>
-        ))}
-      </nav>
-  )
+    <nav className="flex flex-col py-10">
+      {items.map((item) => (
+        <Link href={item.url} key={item.id}>
+          <a className="py-3 font-bold duration-700 hover:text-yellow-500">
+            {item.name.toUpperCase()}
+          </a>
+        </Link>
+      ))}
+    </nav>
+  );
 }

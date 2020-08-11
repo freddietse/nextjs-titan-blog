@@ -14,26 +14,11 @@ export default function Home({ allPostsData }) {
                   <a>{post.title}</a>
                 </Link>
               </h3>
+              <time className="text-base text-gray-700">{post.date}</time>
             </header>
-            <div className="mb-4">
+            <div>
               <p className="text-gray-700">{post.description}</p>
             </div>
-            <footer className="flex items-center">
-              <time className="text-sm text-gray-700 flex items-center mr-5">
-                <svg
-                  className="h-4 w-4 text-gray-500 mr-1"
-                  fill="none"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth="2"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"></path>
-                </svg>
-                {post.date}
-              </time>
-            </footer>
           </article>
         ))}
       </section>
