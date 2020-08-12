@@ -4,22 +4,22 @@ export default function Navbar() {
   const items = [
     {
       id: 0,
-      name: "首页",
+      name: "home",
       url: "/",
     },
     {
       id: 1,
-      name: "照片",
+      name: "photograph",
       url: "/photograph",
     },
     {
       id: 2,
-      name: "资源",
+      name: "resources",
       url: "/resources",
     },
     {
       id: 3,
-      name: "关于",
+      name: "about me",
       url: "/about",
     },
   ];

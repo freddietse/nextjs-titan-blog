@@ -1,13 +1,16 @@
 ---
-title: '深入 Web 开发： Code snippets for CSS'
+title: "深入 Web 开发： Code snippets for CSS"
 description: "Coding is such a blissful activity."
-date: '2017-08-30T01:37:56+08:00'
+date: '2017-08-30'
 ---
 
 #### .5px
 
-```css
+```html
 <div class="line"></div>
+```
+
+```css
 .line {
   position: relative;
 }
@@ -28,7 +31,7 @@ date: '2017-08-30T01:37:56+08:00'
 
 #### 自定义滚动条（Custom scrollbar）
 
-```css
+```html
 <div class="custom-scrollbar">
   <p>
     Lorem ipsum dolor sit amet consectetur adipisicing elit.<br />
@@ -37,6 +40,9 @@ date: '2017-08-30T01:37:56+08:00'
     Quisquam enim qui iure, consequatur velit sit?
   </p>
 </div>
+```
+
+```css
 .custom-scrollbar {
   height: 70px;
   overflow-y: scroll;
@@ -61,8 +67,11 @@ date: '2017-08-30T01:37:56+08:00'
 
 使用纯 CSS 创建三角形。
 
-```css
+```html
 <div class="triangle"></div>
+```
+
+```css
 /*Top*/
 .triangle {
   width: 0;
@@ -102,8 +111,11 @@ date: '2017-08-30T01:37:56+08:00'
 
 #### 圆形（Circle）
 
-```css
+```html
 <div class="circle"></div>
+```
+
+```css
 .circle {
   border-radius: 50%;
   width: 2rem;
@@ -114,12 +126,16 @@ date: '2017-08-30T01:37:56+08:00'
 
 #### 清除浮动（Clearfix）
 
-```css
+```html
 <div class="clearfix">
   <div class="floated">float a</div>
   <div class="floated">float b</div>
   <div class="floated">float c</div>
 </div>
+```
+
+```css
+
 .clearfix:after {
   content: '';
   display: block;

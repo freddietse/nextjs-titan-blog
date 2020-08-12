@@ -1,7 +1,7 @@
 ---
-title: '如何使用 Next.js 搭建一个静态博客'
+title: "如何使用 Next.js 搭建一个静态博客"
 description: "Coding is such a blissful activity."
-date: '2020-01-02'
+date: "2020-01-02"
 ---
 
 Next.js 一般被认为是一个服务端渲染框架（SSR），但在 9.3 版本发布后，它也开始[支持静态网站生成（SSG）](https://nextjs.org/blog/next-9-3#next-gen-static-site-generation-ssg-support)了。

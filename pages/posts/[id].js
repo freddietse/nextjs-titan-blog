@@ -24,6 +24,7 @@ export default function Post({ postData }) {
         escapeHtml={false}
         source={postData.content}
         renderers={{ code: CodeBlock }}
+        linkTarget="_blank"
       />
     </Layout>
   );

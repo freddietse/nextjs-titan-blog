@@ -48,7 +48,7 @@ export default function Layout({ children }) {
           />
           <h1 className="text-2xl font-bold text-gray-900">
             <Link href="/">
-              <a className="big">JANE DOE</a>
+              <a className="big">FREDDIE TSE</a>
             </Link>
           </h1>
         </div>
